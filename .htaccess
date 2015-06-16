@@ -1,0 +1,24 @@
+#New Rewrite rules and now working
+Options +FollowSymLinks
+Options -Indexes    
+DirectoryIndex index.php
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|images|css|js|robots\.txt|favicon\.ico)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+
+
+#Original Rewrite rules only not working in this case
+#RewriteEngine On
+#RewriteBase /CodeIgniter_TBM
+
+#RewriteCond %{REQUEST_URI} ^system.*
+#RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+#RewriteCond %{REQUEST_URI} ^application.*
+#RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?/$1 [L]

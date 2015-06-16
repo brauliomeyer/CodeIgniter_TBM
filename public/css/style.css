@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 21, 2015, 1:54:41 PM
+    Author     : brauliomeyer
+*/
+
+/* General make-up front-end template */
+header.container {
+    width: 980px !important;
+    margin: 0 auto !important;
+    
+}
+
+.wrapper {
+    width: 980px !important;
+    margin: 0 auto !important;
+}
+footer.row {
+    width: 980px !important;
+    margin: 0 auto !important;
+}
+
+/* General make-up back-end template */
+#dashboard-side {
+    background-color: #f2f2f2;
+    min-height:500px;
+    min-width: available;
+}
+
+#dashboard-main {
+    background-color: #f2f2f2;
+    min-height:500px;
+    min-width: available;
+}
+
+.brand {
+    margin: 20px !important;
+}
+.nav a {
+    margin: 20px 0px 20px 0px !important;
+}
+li a:hover {
+    color: red !important;
+}
+.brand:hover {
+    color: red !important;
+}
+
+.navbar-inner {
+    margin: 20px;
+}
